@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <!-- Header cinza -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#D9D9D9"
+        android:padding="14dp"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_voltar_activity17_adm_alunos"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#9c9292"
+            android:text="Voltar"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconSize="30dp"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart"
+            app:iconTint="#000000" />
+    </LinearLayout>
+
+    <!-- Conteúdo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="56dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Input de busca -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:clipToOutline="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp">
+
+            <EditText
+                android:id="@+id/inputBusca"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Buscar Aluno"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
+
+        <!-- Lista de alunos -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/linearLayout_lista_activity17_adm_alunos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@android:color/darker_gray"
+                android:showDividers="middle"
+                android:dividerPadding="8dp">
+
+                <!-- Item 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paulo Dias"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2526804"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <!-- Item 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Afonso"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2472091"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <!-- Item 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carla Mendes"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2598472"
+                        android:textSize="14sp"
+                        android:textColor="#777777"/>
+                </LinearLayout>
+
+                <!-- Item 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="João Victor"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2519034"
+                        android:textSize="14sp"
+                        android:textColor="#777777"/>
+                </LinearLayout>
+
+                <!-- Item 5 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Larissa Lima"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2534720"
+                        android:textSize="14sp"
+                        android:textColor="#777777"/>
+                </LinearLayout>
+
+                <!-- Item 6 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bruno Rocha"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2560921"
+                        android:textSize="14sp"
+                        android:textColor="#777777"/>
+                </LinearLayout>
+
+                <!-- Item 7 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ana Clara"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2548801"
+                        android:textSize="14sp"
+                        android:textColor="#777777"/>
+                </LinearLayout>
+
+                <!-- Item 8 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Felipe Moura"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2587333"
+                        android:textSize="14sp"
+                        android:textColor="#777777"/>
+                </LinearLayout>
+
+                <!-- Item 9 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Isabela Torres"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2501922"
+                        android:textSize="14sp"
+                        android:textColor="#777777"/>
+                </LinearLayout>
+
+                <!-- Item 10 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rodrigo Alves"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2497804"
+                        android:textSize="14sp"
+                        android:textColor="#777777"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="4">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/imageButtonHome"
+            android:contentDescription="Home"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_user"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/imageButtonUser"
+            android:contentDescription="User"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_motherboard"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Motherboard"
+            android:id="@+id/imageButtonMotherbord"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_more_vert"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="More"
+            android:id="@+id/imageButtonMore"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+</FrameLayout>

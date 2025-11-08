@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout_activity09_user_pedidos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <!-- Header cinza -->
+    <LinearLayout
+        android:id="@+id/header_activity09_user_pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#D9D9D9"
+        android:padding="14dp"
+        android:gravity="center_vertical" />
+
+    <!-- Conteúdo -->
+    <LinearLayout
+        android:id="@+id/content_activity09_user_pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="56dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Input de busca -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:clipToOutline="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp">
+
+            <EditText
+                android:id="@+id/inputBusca"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Buscar livro..."
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
+
+        <!-- Lista -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/listaLivros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@android:color/darker_gray"
+                android:showDividers="middle"
+                android:dividerPadding="8dp">
+
+                <!-- Item 1 -->
+                <LinearLayout
+                    android:id="@+id/itemLivro1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 1"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 1"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <!-- Item 2 -->
+                <LinearLayout
+                    android:id="@+id/itemLivro2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 2"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 2"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <!-- Item 3 -->
+                <LinearLayout
+                    android:id="@+id/itemLivro3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 3"
+                        android:textSize="18sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 3"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <!-- Continue até Livro 10 -->
+                <LinearLayout
+                    android:id="@+id/itemLivro4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 4"
+                        android:textSize="18sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 4"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/itemLivro5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 5"
+                        android:textSize="18sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 5"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/itemLivro6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 6"
+                        android:textSize="18sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 6"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/itemLivro7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 7"
+                        android:textSize="18sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 7"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/itemLivro8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 8"
+                        android:textSize="18sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 8"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/itemLivro9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 9"
+                        android:textSize="18sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 9"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/itemLivro10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Livro 10"
+                        android:textSize="18sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor 10"
+                        android:textSize="14sp"
+                        android:textColor="#777777" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/imageButtonHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonBook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_book"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Acervo"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonMotherboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_motherboard"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Chatbot"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_more_vert"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Mais opções"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+</FrameLayout>

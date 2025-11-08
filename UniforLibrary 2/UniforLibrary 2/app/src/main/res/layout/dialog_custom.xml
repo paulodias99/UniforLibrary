@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/bg_dialog_error"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensagem de exemplo"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <Button
+        android:id="@+id/dialogOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:backgroundTint="#212121"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

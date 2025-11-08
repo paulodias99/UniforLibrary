@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity11UserEventos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#D9D9D9"
+        android:padding="14dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_programacao_activity11_user_eventos"
+            android:layout_width="201dp"
+            android:layout_height="77dp"
+            android:backgroundTint="#2A2828"
+            android:text="Programação"
+            android:textColor="#BDBDBD"
+            android:textSize="20sp"
+            app:cornerRadius="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_criar_activity11_user_eventos"
+            android:layout_width="201dp"
+            android:layout_height="77dp"
+            android:backgroundTint="#2A2828"
+            android:text="Criar"
+            android:textColor="#BDBDBD"
+            android:textSize="20sp"
+            app:cornerRadius="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_seusEventos_activity11_user_eventos"
+            android:layout_width="201dp"
+            android:layout_height="77dp"
+            android:backgroundTint="#2A2828"
+            android:text="Seus Eventos"
+            android:textColor="#BDBDBD"
+            android:textSize="20sp"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/imageButtonHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonBook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_book"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Acervo"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonMotherboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_motherboard"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Chatbot"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_more_vert"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Mais opções"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+</LinearLayout>

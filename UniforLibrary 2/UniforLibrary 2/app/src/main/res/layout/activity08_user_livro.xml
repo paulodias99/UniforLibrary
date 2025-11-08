@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity08UserLivro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#D9D9D9"
+        android:padding="14dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_voltar_activity08_user_livro"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#9c9292"
+            android:text="Voltar"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconSize="30dp"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart"
+            app:iconTint="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="44dp"
+        android:paddingBottom="64dp"
+        android:layout_weight="1">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textSize="23sp"
+                android:paddingRight="46dp"/>
+
+            <!-- Campo de texto com borda -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#d9d9d9"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#BDBDBD"
+                app:hintEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eT_nomeLivro_activity08_user_livro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:enabled="false"
+                    android:background="@null"
+                    android:text="Fundamentos da Física 1"
+                    android:inputType="textCapSentences"
+                    android:textColor="#212121"
+                    android:textColorHint="#9E9E9E" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autor:"
+                android:textSize="23sp"
+                android:paddingRight="46dp"/>
+
+            <!-- Campo de texto com borda -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#d9d9d9"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#BDBDBD"
+                app:hintEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eT_autor_activity08_user_livro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:enabled="false"
+                    android:background="@null"
+                    android:text="Halliday"
+                    android:inputType="textCapSentences"
+                    android:textColor="#212121"
+                    android:textColorHint="#9E9E9E" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Código:"
+                android:textSize="23sp"
+                android:paddingRight="46dp"/>
+
+            <!-- Campo de texto com borda -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#d9d9d9"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#BDBDBD"
+                app:hintEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eT_codigo_activity08_user_livro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:enabled="false"
+                    android:background="@null"
+                    android:text="FS-4301"
+                    android:inputType="textCapSentences"
+                    android:textColor="#212121"
+                    android:textColorHint="#9E9E9E" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição:"
+            android:textSize="23dp" />
+
+        <!-- Campo de texto com borda -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTitulo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxBackgroundColor="#C8C2C2"
+            app:boxStrokeColor="#BDBDBD"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eT_descricao_activity08_user_livro"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@null"
+                android:enabled="false"
+                android:text="Livro de Haliday que introduz e formaliza os conceitos da Mêcanica, começando pela Cinética, Dinámica até Energia e Torque."
+                android:hint="Sugestão: Escreva um breve resumo\n do que o livro se trata"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColor="#212121"
+                android:textColorHint="#9E9E9E" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+            <ImageButton
+                android:id="@+id/btn_coracao_activity08_user_livro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_heart_empty"
+                android:scaleX="2.5"
+                android:scaleY="2.5"/>
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reservar_activity08_user_livro"
+                android:layout_width="201dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#2A2828"
+                android:text="Reservar"
+                android:textColor="#BDBDBD"
+                android:textSize="20sp"
+                app:cornerRadius="12dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/imageButtonHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonBook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_book"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Acervo"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonMotherboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_motherboard"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Chatbot"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_more_vert"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Mais opções"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+</LinearLayout>

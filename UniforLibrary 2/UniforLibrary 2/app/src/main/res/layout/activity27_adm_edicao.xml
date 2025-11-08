@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity27AdmEdicao">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#D9D9D9"
+        android:padding="14dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_voltar_activity27_adm_edicao"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#9c9292"
+            android:text="Voltar"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconSize="30dp"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart"
+            app:iconTint="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="42dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textSize="23sp"
+                android:paddingRight="23dp"/>
+            <!-- Campo de texto com borda -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#C8C2C2"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#BDBDBD"
+                app:hintEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eT_nome_activity27_adm_edicao"
+                    android:text="Codigo Limpo"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:inputType="textCapSentences"
+                    android:textColor="#212121" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autor:"
+                android:textSize="23sp"
+                android:paddingRight="29dp"/>
+            <!-- Campo de texto com borda -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#BDBDBD"
+                app:boxBackgroundColor="#C8C2C2"
+                app:hintEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eT_autor_activity27_adm_edicao"
+                    android:text="Robert. C"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:inputType="textCapSentences"
+                    android:textColor="#212121" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código:"
+                android:textSize="23sp"
+                android:paddingRight="12dp"/>
+            <!-- Campo de texto com borda -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#BDBDBD"
+                app:boxBackgroundColor="#C8C2C2"
+                app:hintEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eT_codigo_activity27_adm_edicao"
+                    android:text="CS-8430"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:inputType="textCapSentences"
+                    android:textColor="#212121" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição:"
+            android:textSize="23dp" />
+
+        <!-- Campo de texto com borda -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTitulo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxBackgroundColor="#C8C2C2"
+            app:boxStrokeColor="#BDBDBD"
+            app:counterEnabled="true"
+            app:counterMaxLength="200"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eT_descricao_activity27_adm_edicao"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@null"
+                android:text="Codigo limpo trata-se de boas praticas de códigos e padrões de projeto comunmente utilizados"
+                android:hint="Sugestão: Escreva um breve resumo\n do que o livro se trata"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColor="#212121"
+                android:textColorHint="#9E9E9E" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*opicional"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selecione a foto:"
+                    android:textSize="20sp"
+                    android:paddingRight="10dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C8C2C2"
+                    android:text="Foto.png"
+                    android:textColor="#2C2B2B"
+                    android:textSize="20sp"
+                    app:cornerRadius="9dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_editar_activity27_adm_edicao"
+            android:layout_width="201dp"
+            android:layout_height="77dp"
+            android:backgroundTint="#2A2828"
+            android:text="Editar"
+            android:textColor="#BDBDBD"
+            android:textSize="20sp"
+            app:cornerRadius="12dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

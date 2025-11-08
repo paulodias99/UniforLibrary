@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity10UserDetalhes">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#D9D9D9"
+        android:padding="14dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_voltar_activity10_user_detalhes"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#9c9292"
+            android:text="Voltar"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconSize="30dp"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart"
+            app:iconTint="#000000" />
+    </LinearLayout>
+
+    <!-- Conteúdo -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="40dp">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <!-- Nome -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingRight="14dp" />
+
+                <TextView
+                    android:id="@+id/textView_nome_activity10_user_detalhes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cálculo 1"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <!-- Autor -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Autor:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingRight="14dp" />
+
+                <TextView
+                    android:id="@+id/textView_autor_activity10_user_detalhes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="James Stewart"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <!-- Status -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/detalhes_background"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <!-- Cada bloco abaixo ganhou IDs únicos para evitar conflito -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/text_nao_disponivel_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Não Disponível"
+                        android:textSize="17sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/text_nao_disponivel_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DD/MM/AA"
+                        android:textSize="17sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/text_pronto_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pronto para busca"
+                        android:textSize="17sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/text_pronto_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DD/MM/AA"
+                        android:textSize="17sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/text_posse_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Está em sua posse"
+                        android:textSize="17sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/text_posse_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DD/MM/AA - DD/MM/AA"
+                        android:textSize="17sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/text_atrasado_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Atrasado"
+                        android:textSize="17sp"
+                        android:textColor="#EF1919" />
+
+                    <TextView
+                        android:id="@+id/text_atrasado_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DD/MM/AA"
+                        android:textSize="17sp"
+                        android:textColor="#EF1919" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/text_devolvido_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Devolvido"
+                        android:textSize="17sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/text_devolvido_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DD/MM/AA"
+                        android:textSize="17sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
