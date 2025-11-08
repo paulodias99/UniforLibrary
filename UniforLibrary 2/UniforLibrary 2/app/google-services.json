@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "451412263611",
+    "project_id": "uniforlibrary-4e807",
+    "storage_bucket": "uniforlibrary-4e807.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451412263611:android:b6d488eb09aed51c591f9e",
+        "android_client_info": {
+          "package_name": "com.example.uniforlibrary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVDvKCnPweSPZUmgcHbSWRKDrV-r2g4Mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
